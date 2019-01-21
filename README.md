@@ -1,4 +1,4 @@
-# TP_3 
+# Rendu TP 3
 Je précise avant tout qu'avant d'entamer la partie 3, j'ai eu un problème sur mon pc qui m'a fait perdre mes VM... Louis m'a donc dépanné en me passant sa VM. Il est donc normal de voir louis en nom lors des screen de la partie 3.
 
 ## I. Création et utilisation simples d'une VM CentOS
@@ -11,17 +11,17 @@ Je précise avant tout qu'avant d'entamer la partie 3, j'ai eu un problème sur 
 
  ![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/1.png)
 
-Affichage de la table de routage sur la VM :
+#### Affichage de la table de routage sur la VM :
 
 ![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/2.png)
+_ligne qui leur permet de discuter via le réseau host-only_
+    192.168.127.0/24 dev enp0s8 proto kernel scope link src 192.168.127.10
 
-et expliquez chacune des lignes 
-
-Affichage de la table de routage hôte :
+#### Affichage de la table de routage hôte :
 
 ![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/3.png)
-
-et expliquez chacune des lignes 
+_ligne qui leur permet de discuter via le réseau host-only_
+    192.168.127.0    255.255.255.0         On-link     192.168.127.1    281
 
 Utilisation de curl :  
 

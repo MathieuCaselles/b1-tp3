@@ -1,6 +1,36 @@
 # TP_3 
+Je précise avant tout qu'avant d'entamer la partie 3, j'ai eu un problème sur mon pc qui m'a fait perdre mes VM... Louis m'a donc dépanné en me passant sa VM. Il est donc normal de voir louis en nom lors des screen de la partie 3.
 
-### Dig Ynov
+## I. Création et utilisation simples d'une VM CentOS
+
+(Début fait tous ensemble en classe)
+
+### 5. Faire joujou avec quelques commandes
+
+ #### ping hôte -> VM et ping VM -> hôte :
+
+ ![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/1.png)
+
+Affichage de la table de routage sur la VM :
+
+![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/2.png)
+
+et expliquez chacune des lignes 
+
+Affichage de la table de routage hôte :
+
+![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/3.png)
+
+et expliquez chacune des lignes 
+
+Utilisation de curl :  
+
+![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/4.png)
+
+Utilisation de dig :
+
+
+#### Dig Ynov
 
 
     [root@localhost ~]# dig ynov.com
@@ -68,7 +98,7 @@
     ;; MSG SIZE  rcvd: 849
 
 
-### Dig Google
+#### Dig Google
 
 
     [root@localhost ~]# dig google.com
@@ -136,7 +166,11 @@
     ;; MSG SIZE  rcvd: 851
 
 
-### utiliser ss
+## II. Notion de ports et SSH
+
+### 1. Exploration des ports locaux
+
+#### utiliser la commande ss
 
 
     [root@localhost ~]# ss
@@ -226,14 +260,14 @@
     tcp    ESTAB      0      0                     192.168.127.10:ssh                                  192.168.127.1:resacommunity
 
 
-### utiliser ss -4
+#### utiliser ss -4
 
 
     [root@localhost ~]# ss -4
     Netid  State      Recv-Q Send-Q                 Local Address:Port                                  Peer Address:Port
     tcp    ESTAB      0      36                    192.168.127.10:ssh                                  192.168.127.1:resacommunity
 
-### utiliser ss -t pour TCP
+#### utiliser ss -t pour TCP
 
 
     [root@localhost ~]# ss -t
@@ -241,7 +275,7 @@
     ESTAB      0      36                       192.168.127.10:ssh                                     192.168.127.1:resacommunity
 
 
-### utiliser ss -l pour listening
+#### utiliser ss -l pour listening
 
 
     [root@localhost ~]# ss -l
@@ -348,7 +382,7 @@
 
 
 
-### ss avec -n et -p
+#### ss avec -n et -p
 
 
     [root@localhost ~]# ss -4np
@@ -359,16 +393,24 @@ J'ai bien une application qui écoute sur le port 22
 
 
 
-## 2 SSH
+### 2 SSH
 
-### Pour me cennecter en ssh a la vm je n'ai pas besoin de putty mais juste de ssh:
+#### Pour me cennecter en ssh a la vm je n'ai pas besoin de putty mais juste de ssh:
 
     PS C:\WINDOWS\system32> ssh root@192.168.127.10
     root@192.168.127.10's password:
     Last login: Tue Jan 15 12:17:18 2019 from 192.168.127.1
     [root@localhost ~]#
 
+### 3. Firewall
 
+#### SSH :
+Je change le port et met 2222 à la place comme dans l'exemple puis je reboot.  
+comme le montre le screer ci-dessous, la connexion échoue car cela veut se connecter au port 22.  
+je fini donc par lui dire de passer par le port 2222 et cela fonctionne:
+
+
+![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/5.png)
 
 
 ## III. Routage statique

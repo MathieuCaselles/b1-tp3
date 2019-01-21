@@ -27,7 +27,7 @@ _Ligne qui leur permet de discuter via le réseau host-only :_
 
 Utilisation de curl :  
 
-![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/4.png)
+![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/4.png)  
 
 Utilisation de dig :
 
@@ -412,7 +412,7 @@ comme le montre le screer ci-dessous, la connexion échoue car cela veut se conn
 je fini donc par lui dire de passer par le port 2222 et cela fonctionne:
 
 
-![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/5.png)
+![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/5.png)  
 
 
 ## III. Routage statique
@@ -421,11 +421,11 @@ je fini donc par lui dire de passer par le port 2222 et cela fonctionne:
 
 Pierre se met dans le réseau 12 sur Windows
 
-![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/9.png)
+![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/9.png)  
 
 Il modifie mon reseau host only en mode pc1
 
-![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/16.png)
+![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/16.png)  
 
 #### Check
 
@@ -433,17 +433,17 @@ Il modifie mon reseau host only en mode pc1
 
 Il ping le PC 2 qui est le mien et il est bien répondu
 
-![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/10.png)
+![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/10.png)  
 
 Pour changer l&#39;ip dans CentOS je tape nano /etc/sysconfig/network-scripts/ifcfg-enp0s8
 
-![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/11.png)
+![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/11.png)  
 
 J&#39;arrive ici et je modifie l&#39;ip en 192.168.101.10 et je quitte en sauvegardant
 
 Il ping sa vm1 a son pc1 et ça répond correctement
 
-![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/12.png)
+![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/12.png)  
 
 Je me ping de vm2 à pc2 et ça fonctionne aussi
 
@@ -453,7 +453,7 @@ Je me ping de vm2 à pc2 et ça fonctionne aussi
 
 Je vais dans le regedit et à la direction HKEY\_LOCAL\_MACHINE\SYSTEM\CurrentControlSet\ Services\Tcpip\Parameters\IPEnableRouter et je mets la valeur a 1
 
-![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/13.png)
+![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/13.png)  
 
 Je vais ensuite mettre en automatique Routage a accès distant dans services.msc et je redémarre mon pc.
 
@@ -478,7 +478,7 @@ Je réussit donc à le ping
 #### VM2
 
 Je tape donc
-![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/14.png)
+![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/14.png)  
 
 Les ping en theorie sont donc censé marcher puisque nous avons ajouté les routes pour qu&#39;ils le puissent
 
@@ -494,5 +494,5 @@ Sur windows je vais dans C:\Windows\System32\drivers\etc et j&#39;ajoute l&#39;i
 
 Je fais de même pour le reste et ajoute à chaque fois les 4
 
-![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/15.png)
+![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/15.png)  
 Cela fonctionne donc les fichiers hosts sont donc bien configurés

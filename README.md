@@ -375,11 +375,11 @@ J'ai bien une application qui écoute sur le port 22
 
 ### 1. Préparation des hôtes (vos PCs)
 
-Je me mets dans le réseau 12 sur Windows
+Pierre se mets dans le réseau 12 sur Windows
 
 ![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/9.png)
 
-Je modifie mon reseau host only en mode pc1
+Il modifie mon reseau host only en mode pc1
 
 ![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/16.png)
 
@@ -387,7 +387,7 @@ Je modifie mon reseau host only en mode pc1
 
 
 
-Je ping le PC 2 matthieu et je suis bien répondu
+Il ping le PC 2 qui est le mien et il est bien répondu
 
 ![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/10.png)
 
@@ -397,11 +397,11 @@ Pour changer l&#39;ip dans CentOS je tape nano /etc/sysconfig/network-scripts/if
 
 J&#39;arrive ici et je modifie l&#39;ip en 192.168.101.10 et je quitte en sauvegardant
 
-Je ping ma vm1 a mon pc1 et ça répond correctement
+Il ping sa vm1 a son pc1 et ça répond correctement
 
 ![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/12.png)
 
-Matthieu se ping de vm2 a pc2 et ça fonctionne aussi
+Je me ping de vm2 à pc2 et ça fonctionne aussi
 
 #### Activation du routage sur les PCs
 
@@ -413,27 +413,27 @@ Je vais dans le regedit et à la direction HKEY\_LOCAL\_MACHINE\SYSTEM\CurrentCo
 
 Je vais ensuite mettre en automatique Routage a accès distant dans services.msc et je redémarre mon pc.
 
-Le service ne réussira pas à se lancer après 1h30 de tentative de fix le problème, matthieu en w10 aura son service qui marchera.
+Le service ne réussira pas à se lancer pour pierre qui est sous windows 8 après 1h30 de tentative de fix le problème, mais moi en w10 j'aurais mon service qui marchera.
 
-Je continue donc en faisant comme si ça marche et en simulant. ( on en a parlé discord )
+On continue donc en faisant comme si ça marchais pour Pierre et en simulant. ( on en a parlé discord )
 
 ### 2. Configuration du routage
 
 #### PC1
 
-Je tape dans le powershell route 192.168.102.10/24 mask 255.255.255.0 192.168.112.2
+Pierre tape dans le powershell route 192.168.102.10/24 mask 255.255.255.0 192.168.112.2
 
 #### PC2
 
-Matthieu fait l&#39;opération inverse soit route add 192.168.101.1/24 mask 255.255.255.0 192.168.112.1
+Je fais l&#39;opération inverse soit route add 192.168.101.1/24 mask 255.255.255.0 192.168.112.1
 
 Le cmd répond : OK !
 
-Matthieu réussit donc à me ping
+Je réussit donc à le ping
 
 #### VM2
 
-Matthieu tape donc
+Je tape donc
 ![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/14.png)
 
 Les ping en theorie sont donc censé marcher puisque nous avons ajouté les routes pour qu&#39;ils le puissent

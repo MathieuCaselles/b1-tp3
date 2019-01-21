@@ -9,18 +9,20 @@ Je précise avant tout qu'avant d'entamer la partie 3, j'ai eu un problème sur 
 
  #### ping hôte -> VM et ping VM -> hôte :
 
- ![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/1.png)
+ ![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/1.png)  
 
 #### Affichage de la table de routage sur la VM :
 
-![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/2.png)
+![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/2.png)  
 _ligne qui leur permet de discuter via le réseau host-only_
+
     192.168.127.0/24 dev enp0s8 proto kernel scope link src 192.168.127.10
 
 #### Affichage de la table de routage hôte :
 
 ![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/3.png)
 _ligne qui leur permet de discuter via le réseau host-only_
+
     192.168.127.0    255.255.255.0         On-link     192.168.127.1    281
 
 Utilisation de curl :  

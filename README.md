@@ -377,11 +377,11 @@ J'ai bien une application qui écoute sur le port 22
 
 Je me mets dans le réseau 12 sur Windows
 
-![alt text](https://github.com/MathieuCaselles/b1-tp3/tree/master/screen/9.png)
+![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/9.png)
 
 Je modifie mon reseau host only en mode pc1
 
-![alt text](https://github.com/MathieuCaselles/b1-tp3/tree/master/screen/16.png)
+![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/16.png)
 
 #### Check
 
@@ -389,17 +389,17 @@ Je modifie mon reseau host only en mode pc1
 
 Je ping le PC 2 matthieu et je suis bien répondu
 
-![alt text](https://github.com/MathieuCaselles/b1-tp3/tree/master/screen/10.png)
+![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/10.png)
 
 Pour changer l&#39;ip dans CentOS je tape nano /etc/sysconfig/network-scripts/ifcfg-enp0s8
 
-![alt text](https://github.com/MathieuCaselles/b1-tp3/tree/master/screen/11.png)
+![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/11.png)
 
 J&#39;arrive ici et je modifie l&#39;ip en 192.168.101.10 et je quitte en sauvegardant
 
 Je ping ma vm1 a mon pc1 et ça répond correctement
 
-![alt text](https://github.com/MathieuCaselles/b1-tp3/tree/master/screen/12.png)
+![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/12.png)
 
 Matthieu se ping de vm2 a pc2 et ça fonctionne aussi
 
@@ -409,7 +409,7 @@ Matthieu se ping de vm2 a pc2 et ça fonctionne aussi
 
 Je vais dans le regedit et à la direction HKEY\_LOCAL\_MACHINE\SYSTEM\CurrentControlSet\ Services\Tcpip\Parameters\IPEnableRouter et je mets la valeur a 1
 
-![alt text](https://github.com/MathieuCaselles/b1-tp3/tree/master/screen/13.png)
+![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/13.png)
 
 Je vais ensuite mettre en automatique Routage a accès distant dans services.msc et je redémarre mon pc.
 
@@ -434,7 +434,7 @@ Matthieu réussit donc à me ping
 #### VM2
 
 Matthieu tape donc
-![alt text](https://github.com/MathieuCaselles/b1-tp3/tree/master/screen/14.png)
+![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/14.png)
 
 Les ping en theorie sont donc censé marcher puisque nous avons ajouté les routes pour qu&#39;ils le puissent
 
@@ -450,5 +450,5 @@ Sur windows je vais dans C:\Windows\System32\drivers\etc et j&#39;ajoute l&#39;i
 
 Je fais de même pour le reste et ajoute à chaque fois les 4
 
-![alt text](https://github.com/MathieuCaselles/b1-tp3/tree/master/screen/15.png)
+![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/15.png)
 Cela fonctionne donc les fichiers hosts sont donc bien configurés

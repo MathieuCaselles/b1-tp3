@@ -20,7 +20,7 @@ _Ligne qui leur permet de discuter via le réseau host-only :_
 
 #### Affichage de la table de routage hôte :
 
-![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/3.png)
+![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/3.png)  
 _Ligne qui leur permet de discuter via le réseau host-only :_
 
     192.168.127.0    255.255.255.0         On-link     192.168.127.1    281

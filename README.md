@@ -14,14 +14,14 @@ Je précise avant tout qu'avant d'entamer la partie 3, j'ai eu un problème sur 
 #### Affichage de la table de routage sur la VM :
 
 ![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/2.png)  
-_ligne qui leur permet de discuter via le réseau host-only_
+_Ligne qui leur permet de discuter via le réseau host-only :_
 
     192.168.127.0/24 dev enp0s8 proto kernel scope link src 192.168.127.10
 
 #### Affichage de la table de routage hôte :
 
 ![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/3.png)
-_ligne qui leur permet de discuter via le réseau host-only_
+_Ligne qui leur permet de discuter via le réseau host-only :_
 
     192.168.127.0    255.255.255.0         On-link     192.168.127.1    281
 
@@ -397,7 +397,7 @@ J'ai bien une application qui écoute sur le port 22
 
 ### 2 SSH
 
-#### Pour me cennecter en ssh a la vm je n'ai pas besoin de putty mais juste de ssh:
+#### Pour me connecter en ssh a la vm je n'ai pas besoin de putty mais juste de ssh:
 
     PS C:\WINDOWS\system32> ssh root@192.168.127.10
     root@192.168.127.10's password:
@@ -419,7 +419,7 @@ je fini donc par lui dire de passer par le port 2222 et cela fonctionne:
 
 ### 1. Préparation des hôtes (vos PCs)
 
-Pierre se mets dans le réseau 12 sur Windows
+Pierre se met dans le réseau 12 sur Windows
 
 ![alt text](https://github.com/MathieuCaselles/b1-tp3/blob/master/screen/9.png)
 
